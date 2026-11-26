@@ -16,7 +16,7 @@
 
     <header class="header">
         <a href="#home" class="logo">
-            Ernie Golosino
+            My Portfolio
         </a>
         <nav>
             <a href="#home">Home</a>
@@ -25,14 +25,12 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </header>
 
     <main id="home">
         <div class="carousel">
             <div class="track">
-                <div class="slide">
-                    <img src="cs1.webp" alt="Technology background">
-                </div>
                 <div class="slide">
                     <img src="se.jpg" alt="Programming background">
                 </div>
@@ -90,11 +88,9 @@
         <p class="section-label">01 / ABOUT ME</p>
         <h2>About <span>Me.</span></h2>
         <p>
-            I am Ernie Golosino, a Computer Science enthusiast
-            interested in software engineering, technology, and data analytics.
-
-            I enjoy learning new technologies and creating digital solutions
-            that combine creativity and innovation.
+            I am Ernie Golosino, a Bachelor of Science in Computer Science (BSCS) student at Surigao del Norte State University – Main Campus. 
+            I am passionate about technology, software development, and data analytics. I enjoy exploring new technologies, enhancing my programming skills, 
+            and creating innovative digital solutions that combine creativity and functionality.
         </p>
     </section>
 <section id="skills">
@@ -107,42 +103,55 @@
     <div class="skills-container">
         <div class="skill-card">
             <div class="skill-icon python">
-                <span>Py</span>
+                <i class="fa-brands fa-python"></i>
             </div>
             <h3>Python</h3>
             <p>Programming Language</p>
             <div class="skill-line">
-                <span style="width: 85%"></span>
+                <span style="width: 50%"></span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-icon javascript">
-                <span>JS</span>
+                <i class="fa-brands fa-js"></i>
             </div>
             <h3>JavaScript</h3>
             <p>Programming Language</p>
             <div class="skill-line">
-                <span style="width: 75%"></span>
+                <span style="width: 10%"></span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-icon html">
-                <span>5</span>
+                <i class="fa-brands fa-html5"></i>
             </div>
             <h3>HTML</h3>
             <p>Web Structure</p>
             <div class="skill-line">
-                <span style="width: 90%"></span>
+                <span style="width: 50%"></span>
             </div>
         </div>
         <div class="skill-card">
             <div class="skill-icon css">
-                <span>3</span>
+                <i class="fa-brands fa-css3-alt"></i>
             </div>
             <h3>CSS</h3>
             <p>Web Styling</p>
             <div class="skill-line">
-                <span style="width: 85%"></span>
+                <span style="width: 45%"></span>
+            </div>
+        </div>
+        <!-- Figma -->
+        <div class="skill-card">
+            <div class="skill-icon figma">
+                <i class="fa-brands fa-figma"></i>
+            </div>
+
+            <h3>Figma</h3>
+            <p>UI/UX Design Tool</p>
+
+            <div class="skill-line">
+                <span style="width: 40%"></span>
             </div>
         </div>
     </div>
@@ -177,17 +186,101 @@
             </div>
         </div>
     </section>
+    
     <section id="contact">
         <p class="section-label">03 / GET IN TOUCH</p>
+
         <h2>Let's Connect<span>.</span></h2>
+
         <p>
             Have a project or opportunity in mind?
             Feel free to reach out!
         </p>
-        <a href="mailto:your-email@example.com" class="btn">
-            Contact Me →
-        </a>
+
+        <button class="contact-cta" id="openContact">
+            <span>Contac Me</span>
+            <span class="contact-arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+        </button>
     </section>
+
+
+    <!-- CONTACT POPUP -->
+<div class="contact-modal" id="contactModal">
+
+    <div class="contact-box">
+
+        <button class="close-modal" id="closeContact">&times;</button>
+
+        <div class="contact-header">
+            <span class="section-label">GET IN TOUCH</span>
+            <h2>Let's Connect<span>.</span></h2>
+            <p>
+                Have a project or opportunity in mind?
+                Feel free to reach out!
+            </p>
+        </div>
+
+        <div class="contact-info">
+
+            <div class="info-card">
+                <span class="info-icon">✉</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>erniegolosino04@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <span class="info-icon">⌖</span>
+                <div>
+                    <h3>Location</h3>
+                    <p>Surigao City, Philippines</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3 class="form-title">Send Me a Message</h3>
+
+        <form id="contactForm">
+
+            <div class="input-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label>Subject</label>
+                <input type="text" placeholder="What is this about?" required>
+            </div>
+
+            <div class="input-group">
+                <label>Message</label>
+                <textarea rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit" class="send-btn">
+                Send Message →
+            </button>
+
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/erniegolosino04" target="_blank">GitHub</a>
+            <a href="https://www.facebook.com/ernie.golosino.1" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/ernie-golosino-6853a5452/" target="_blank">LinkedIn</a>
+        </div>
+
+    </div>
+
+</div>
 
     <script src="script.js" defer></script>
 
